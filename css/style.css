@@ -1,0 +1,144 @@
+.header-wraper{
+background-image: url(../photos/background-image.jpg);
+width: 100%;
+height: 900px;
+background-repeat: no-repeat;
+background-size: cover;
+background-position:center ;
+}
+.container{
+    width: 1070px;
+    margin: 0 auto;
+    padding-top: 51px;
+}
+.flex-header{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+.nav-li{
+    color: #D9F0FF;
+    font-size: 12px;
+    text-decoration: none;
+    margin-right: 30px;
+    font-family: 'Lato', sans-serif;
+}
+.nav-ul{
+    display: flex;
+}
+.headline{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.text1{
+    width: 468px;
+    height: 186px;
+    font-size: 50px;
+    margin-bottom:24px ;
+    font-family: 'Lato', sans-serif;
+}
+.text2{
+    width: 457px;
+    height: 72px;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+.wraper-box{
+    display: flex;
+}
+.left-box,
+.right-box{
+    width: 50%;
+}
+.left-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btn{
+    width: 307px;
+    height: 72px;
+    border-radius: 36px;
+    background-color: #325DFF;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    text-transform:uppercase ;
+    padding:27px 45px 23px 45px;
+    font-family: 'Lato', sans-serif;
+}
+.right-box img{
+    width: 100%;
+    height: 601px;
+    object-fit: cover;
+    display: block;
+
+}
+.container-box{
+width: 1171px;
+margin: 0 auto;
+background-color:whitesmoke;
+}
+.box-item{
+    width: 371px;
+    height: 374px;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.line1{
+    display: flex;
+    justify-content: space-between;
+}
+.line2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.icon{
+    width: 88px;
+    height: 88px;
+    background-color: #325DFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-item p{
+    width: 251px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+.box-item h3{
+    margin-top: 27px;
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+}
+.box-title{
+font-size: 35px;
+text-align: center;
+margin-bottom: 9px;
+font-family: 'Lato', sans-serif;
+
+}
+.texts{
+    width: 771px;
+    margin: 0 auto;
+    height: 130px;
+}
+.texxt{
+   font-size: 16px;
+   text-align: center;
+   font-family: 'Lato', sans-serif;
+}
+.color{
+    width: 100%;
+    height: 1200px;
+    background-color: whitesmoke;
+}
