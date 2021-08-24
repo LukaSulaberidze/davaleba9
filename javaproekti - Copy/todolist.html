@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"style="text/css" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css" type="text/css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <p>Add Todo</p>
+      <img src="photos/icon_close.svg" onclick="closeModal()" alt="">
+      </div>
+      <label>task<br><br>
+      <input type="text" id="taskName" name="task" /></label>
+      <br>
+      <label>completed<br><br>
+        <select name="completed" id="taskCompleted">
+          <option value="true">Completed</option>
+          <option value="false">Not completed</option>
+        </select>
+      </label>
+      <br>
+      <button id="save" onclick="save()">save</button>
+    </div>
+  </div>
+    <section class="bar">
+		<div class="menubar">
+			<img src="photos/Group 249.svg"alt="" class="smallicons">
+			<img src="photos/Chat Icon.svg" alt=""class="smallicons">
+			<img src="photos/Notification.svg" alt=""class="smallicons">
+			<img src="photos/Divider.svg" alt="" class="divider">
+			<div class="projects">
+				<button class="btn"><img src="photos/small-down.svg" alt=""></button>
+				<ul>
+				  <li><a href="#">Status: Online</a></li>
+				  <li><a href="#">Account Setting</a></li>
+				  <li><a href="#">Feedback</a></li>
+				  <li><a href="#">Logout </a></li>
+				</ul>
+			  </div>
+			<p class="john">John Doe</p>
+			<img src="photos/Group 250.jpg" alt="sd" class="johnphoto">
+			
+		</div>
+		
+
+	</section>
+    <div id="mySidenav" class="sidenav">
+        <p class="logo"><img src="photos/Image 1.svg" alt=""></p>
+      <a href="dashboard.html" class="icon-a"><i class="fa fa-home" aria-hidden="true"></i> &nbsp;&nbsp;Dashboard</a>
+      <a href="todolist.html"class="icon-a"><i class="fa fa-list-ol" aria-hidden="true"></i> &nbsp;&nbsp;Todo List</a>
+      
+    
+    </div>
+    <div id="main">
+        <span style="font-size:30px;cursor:pointer; color: black;" class="nav"  >&#9776;</span>
+        <span style="font-size:30px;cursor:pointer; color: black;" class="nav2"  >&#9776; </span>
+        <div class="head">
+          <div class="col-div-6"></div>
+        </div>
+        <div class="main-container">
+          <div class="todolist">
+            <div class="todolist-header">
+              <p>All Todo</p>
+              <button onclick="openModal()">Add Todo</button>
+            </div>
+            <div class="todolist-container">
+              <table id="theTable">
+                <tr>
+                  <th>Task name</th>
+                  <th>Is complated</th>
+                  <th>Created By</th>
+                  <th>Create Date</th>
+                  <th>Update Date</th>
+                  <th>Actions</th>
+                </tr>
+              </table>
+            </div>
+            <div class="todolist-pagination">
+                <div class="pagination-prev" onclick="prevPage()">prev</div>
+                <div class="pagination-page">1</div>
+                <div class="pagination-page">2</div>
+                <div class="pagination-page">3</div>
+                <div class="pagination-page">4</div>
+                <div class="pagination-page">5</div>
+                <div class="pagination-page">6</div>
+                <div class="pagination-page">7</div>
+                <div class="pagination-page">8</div>
+                <div class="pagination-page">9</div>
+                <div class="pagination-page">10</div>
+                <div class="pagination-page">11</div>
+                <div class="pagination-page">12</div>
+                <div class="pagination-page">13</div>
+                <div class="pagination-page">14</div>
+                <div class="pagination-page">15</div>
+                <div class="pagination-page">16</div>
+                <div class="pagination-page">17</div>
+                <div class="pagination-page">18</div>
+                <div class="pagination-page">19</div>
+                <div class="pagination-page">20</div>
+                <div class="pagination-next" onclick="nextPage()">next</div>
+            </div>
+             
+          </div>
+        </div>
+            
+    
+    </div>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="getTodos.js"></script>
+<script>
+
+  $(".nav").click(function(){
+    $("#mySidenav").css('width','70px');
+    $("#main").css('margin-left','70px');
+    $(".logo").css('visibility', 'hidden');
+    $(".logo span").css('visibility', 'visible');
+     $(".logo span").css('margin-left', '-10px');
+     $(".icon-a").css('visibility', 'hidden');
+     $(".icons").css('visibility', 'visible');
+     $(".icons").css('margin-left', '-8px');
+      $(".nav").css('display','none');
+      $(".nav2").css('display','block');
+  });
+
+$(".nav2").click(function(){
+    $("#mySidenav").css('width','300px');
+    $("#main").css('margin-left','300px');
+    $(".logo").css('visibility', 'visible');
+     $(".icon-a").css('visibility', 'visible');
+     $(".icons").css('visibility', 'visible');
+     $(".nav").css('display','block');
+      $(".nav2").css('display','none');
+ });
+
+</script>
+    
+</body>
+</html>
